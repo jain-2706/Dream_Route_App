@@ -1,0 +1,485 @@
+[
+  {
+    "domain": "Mathematics",
+    "question": "If the perimeter of a square is 40 cm, what is the length of each side?",
+    "options": ["5 cm","8 cm","10 cm","12 cm"],
+    "answer": "10 cm"
+  },
+  {
+    "domain": "Mathematics",
+    "question": "The value of √144 is:",
+    "options": ["10","11","12","13"],
+    "answer": "12"
+  },
+  {
+    "domain": "Mathematics",
+    "question": "If 3x = 12, then x = ?",
+    "options": ["2","3","4","5"],
+    "answer": "4"
+  },
+  {
+    "domain": "Mathematics",
+    "question": "The probability of getting a head when tossing a fair coin is:",
+    "options": ["0","1/2","1","2"],
+    "answer": "1/2"
+  },
+  {
+    "domain": "Mathematics",
+    "question": "What is 20% of 250?",
+    "options": ["25","40","50","75"],
+    "answer": "50"
+  },
+  {
+    "domain": "Mathematics",
+    "question": "The area of a triangle with base 10 cm and height 8 cm is:",
+    "options": ["20 cm²","40 cm²","50 cm²","80 cm²"],
+    "answer": "40 cm²"
+  },
+  {
+    "domain": "Mathematics",
+    "question": "Which of the following is a prime number?",
+    "options": ["39","41","49","51"],
+    "answer": "41"
+  },
+  {
+    "domain": "Mathematics",
+    "question": "If speed = 60 km/h, distance = 180 km, then time = ?",
+    "options": ["2 h","3 h","4 h","5 h"],
+    "answer": "3 h"
+  },
+  {
+    "domain": "Mathematics",
+    "question": "The mean of 2, 4, 6, 8 is:",
+    "options": ["4","5","6","8"],
+    "answer": "5"
+  },
+  {
+    "domain": "Mathematics",
+    "question": "The value of π is approximately:",
+    "options": ["2.14","3.14","4.14","22"],
+    "answer": "3.14"
+  },
+ {
+   "domain": "Science",
+   "question": "The chemical formula of water is",
+   "options":["CO₂","H₂O","O₂","HCl"],
+    "answer": "H₂O"
+ },
+
+  {
+    "domain": "Science",
+    "question": "The force that pulls objects towards Earth is",
+    "options":["Magnetism","Gravity", "Friction", "Tension"],
+    "answer": "Gravity"
+  },
+  {
+    "domain": "Science",
+    "question": "Which planet is known as the 'Red Planet'?",
+    "options":["Earth","Mars","Jupiter","Venus"],
+    "answer": "Mars"
+  },
+  {
+    "domain": "Science",
+    "question": "The powerhouse of the cell is",
+    "options":["Nucleus","Mitochondria","Ribosome","Chloroplast"],
+    "answer": "Mitochondria"
+  },
+  {
+    "domain": "Science",
+    "question": "Photosynthesis occurs in which part of the plant?",
+    "options":["Roots","Stem","Leaves","Flowers"],
+    "answer": "Leaves"
+  },
+  {
+    "domain": "Science",
+    "question": "Which gas is essential for breathing?",
+    "options":["Oxygen","Carbon dioxide","Nitrogen","Helium"],
+    "answer": "Oxygen"
+  },
+  {
+    "domain": "Science",
+    "question": "What is the boiling point of water at sea level?",
+    "options":["50°C","100°C","150°C","200°C"],
+    "answer": "100°C"
+  },
+  {
+    "domain": "Science",
+    "question": "Human blood is red due to:",
+    "options":["CO2","H2O","O2","HCl"],
+    "answer": "H20"
+  },
+  {
+    "domain": "Science",
+    "question": "Which is the largest organ in the human body?",
+    "options": ["Heart","Brain","Skin","Liver"],
+    "answer": "Skin"
+  },
+  {
+    "domain": "Science",
+    "question": "Which of these is a renewable energy source?",
+    "options": ["Coal","Oil","Solar","Natural gas"],
+    "answer": "Solar"
+  },
+
+  {
+    "domain": "Arts",
+    "question": "“Shakespeare” is famous for his:",
+    "options": ["Novels","Poems & Plays","Paintings","Inventions"],
+    "answer": "Poems & Plays"
+  },
+  {
+    "domain": "Arts",
+    "question": "The Taj Mahal was built during the rule of:",
+    "options": ["Akbar","Aurangzeb","Shah Jahan","Babur"],
+    "answer": "Shah Jahan"
+  },
+  {
+    "domain": "Arts",
+    "question": "The primary colors are:",
+    "options": ["Red, Blue, Green","Red, Yellow, Blue","Yellow, Green, Blue","Red, White, Black"],
+    "answer": "Red, Yellow, Blue"
+  },
+  {
+    "domain": "Arts",
+    "question": "Who wrote “Geetanjali”?",
+    "options": ["Rabindranath Tagore","Premchand","Mahadevi Verma","Harivansh Rai Bachchan"],
+    "answer": "Rabindranath Tagore"
+  },
+  {
+    "domain": "Arts",
+    "question": "“Sitar” is a type of:",
+    "options": ["Painting style","Musical instrument","Dance form","Sculpture"],
+    "answer": "Musical instrument"
+  },
+  {
+    "domain": "Arts",
+    "question": "The Ajanta caves are famous for:",
+    "options": ["Sculptures","Paintings","Architecture","Dance"],
+    "answer": "Paintings"
+  },
+  {
+    "domain": "Arts",
+    "question": "The dance form Bharatanatyam belongs to which state?",
+    "options": ["Tamil Nadu","Punjab","Rajasthan","Odisha"],
+    "answer": "Tamil Nadu"
+  },
+  {
+    "domain": "Arts",
+    "question": "Who painted “Starry Night”?",
+    "options": ["Monet","Picasso","Van Gogh","Rembrandt"],
+    "answer": "Van Gogh"
+  },
+  {
+    "domain": "Arts",
+    "question": "The national anthem “Jana Gana Mana” was composed by:",
+    "options": ["Bankim Chandra Chatterjee","Rabindranath Tagore","Subramania Bharati","Iqbal"],
+    "answer": "Rabindranath Tagore"
+  },
+  {
+    "domain": "Arts",
+    "question": "The “Epic of Mahabharata” was written by:",
+    "options": ["Valmiki","Ved Vyas","Kalidas","Tulsidas"],
+    "answer": "Ved Vyas"
+  },
+
+  {
+    "domain": "Commerce",
+    "question": "The study of money and business is called:",
+    "options": ["Economics","Physics","Botany","Geology"],
+    "answer": "Economics"
+  },
+  {
+    "domain": "Commerce",
+    "question": "In accounting, assets = liabilities + ?",
+    "options": ["Profit","Equity","Income","Capital"],
+    "answer": "Equity"
+  },
+  {
+    "domain": "Commerce",
+    "question": "Which is the largest stock exchange in India?",
+    "options": ["BSE","NSE","MCX","SEBI"],
+    "answer": "NSE"
+  },
+  {
+    "domain": "Commerce",
+    "question": "Which one is NOT a factor of production?",
+    "options": ["Land","Labor","Capital","Pollution"],
+    "answer": "Pollution"
+  },
+  {
+    "domain": "Commerce",
+    "question": "Which is the central bank of India?",
+    "options": ["SBI","RBI","ICICI","HDFC"],
+    "answer": "RBI"
+  },
+  {
+    "domain": "Commerce",
+    "question": "Demand increases when:",
+    "options": ["Price rises","Price falls","Supply increases","Inflation increases"],
+    "answer": "Price falls"
+  },
+  {
+    "domain": "Commerce",
+    "question": "Double-entry system of accounting was introduced by:",
+    "options": ["Adam Smith","Luca Pacioli","Keynes","Karl Marx"],
+    "answer": "Luca Pacioli"
+  },
+  {
+    "domain": "Commerce",
+    "question": "The term GDP stands for:",
+    "options": ["Gross Domestic Product","Government Development Plan","General Domestic Policy","Gross Departmental Profit"],
+    "answer": "Gross Domestic Product"
+  },
+  {
+    "domain": "Commerce",
+    "question": "Balance Sheet shows:",
+    "options": ["Profit & Loss","Assets & Liabilities","Sales & Purchases","Cash only"],
+    "answer": "Assets & Liabilities"
+  },
+  {
+    "domain": "Commerce",
+    "question": "Which tax was replaced by GST in India?",
+    "options": ["VAT & Service Tax","Property Tax","Income Tax","Customs Duty"],
+    "answer": "VAT & Service Tax"
+  },
+    {
+      "domain": "गणित",
+      "question": "यदि किसी वर्ग की परिमाप 40 सेमी है, तो प्रत्येक भुजा की लंबाई कितनी होगी?",
+      "options": ["5 सेमी","8 सेमी","10 सेमी","12 सेमी"],
+      "answer": "10 सेमी"
+    },
+    {
+      "domain": "गणित",
+      "question": "√144 का मान है:",
+      "options": ["10","11","12","13"],
+      "answer": "12"
+    },
+    {
+      "domain": "गणित",
+      "question": "यदि 3x = 12, तो x = ?",
+      "options": ["2","3","4","5"],
+      "answer": "4"
+    },
+    {
+      "domain": "गणित",
+      "question": "एक निष्पक्ष सिक्का उछालने पर हेड आने की प्रायिकता क्या होगी?",
+      "options": ["0","1/2","1","2"],
+      "answer": "1/2"
+    },
+    {
+      "domain": "गणित",
+      "question": "250 का 20% कितना है?",
+      "options": ["25","40","50","75"],
+      "answer": "50"
+    },
+    {
+      "domain": "गणित",
+      "question": "यदि किसी त्रिभुज का आधार 10 सेमी और ऊँचाई 8 सेमी है, तो क्षेत्रफल होगा:",
+      "options": ["20 सेमी²","40 सेमी²","50 सेमी²","80 सेमी²"],
+      "answer": "40 सेमी²"
+    },
+    {
+      "domain": "गणित",
+      "question": "निम्न में से कौन अभाज्य संख्या है?",
+      "options": ["39","41","49","51"],
+      "answer": "41"
+    },
+    {
+      "domain": "गणित",
+      "question": "यदि गति = 60 किमी/घं, दूरी = 180 किमी, तो समय = ?",
+      "options": ["2 घंटे","3 घंटे","4 घंटे","5 घंटे"],
+      "answer": "3 घंटे"
+    },
+    {
+      "domain": "गणित",
+      "question": "2, 4, 6, 8 का औसत है:",
+      "options": ["4","5","6","8"],
+      "answer": "5"
+    },
+    {
+      "domain": "गणित",
+      "question": "π का मान लगभग कितना है?",
+      "options": ["2.14","3.14","4.14","22"],
+      "answer": "3.14"
+    },
+    {
+      "domain": "विज्ञान",
+      "question": "पानी का रासायनिक सूत्र है",
+      "options":["CO₂","H₂O","O₂","HCl"],
+      "answer": "H₂O"
+    },
+    {
+      "domain": "विज्ञान",
+      "question": "वह बल जो वस्तुओं को पृथ्वी की ओर खींचता है:",
+      "options":["चुंबकत्व","गुरुत्वाकर्षण","घर्षण","तनाव"],
+      "answer": "गुरुत्वाकर्षण"
+    },
+    {
+      "domain": "विज्ञान",
+      "question": "कौन सा ग्रह 'लाल ग्रह' के नाम से जाना जाता है?",
+      "options":["पृथ्वी","मंगल","बृहस्पति","शुक्र"],
+      "answer": "मंगल"
+    },
+    {
+      "domain": "विज्ञान",
+      "question": "कोशिका का पावरहाउस कहलाता है:",
+      "options":["नाभिक","माइटोकॉन्ड्रिया","राइबोसोम","क्लोरोप्लास्ट"],
+      "answer": "माइटोकॉन्ड्रिया"
+    },
+    {
+      "domain": "विज्ञान",
+      "question": "पौधों में प्रकाश संश्लेषण किस भाग में होता है?",
+      "options":["जड़","तना","पत्तियाँ","फूल"],
+      "answer": "पत्तियाँ"
+    },
+    {
+      "domain": "विज्ञान",
+      "question": "साँस लेने के लिए कौन सी गैस आवश्यक है?",
+      "options":["ऑक्सीजन","कार्बन डाइऑक्साइड","नाइट्रोजन","हीलियम"],
+      "answer": "ऑक्सीजन"
+    },
+    {
+      "domain": "विज्ञान",
+      "question": "समुद्र तल पर पानी का क्वथनांक (Boiling point) कितना होता है?",
+      "options":["50°C","100°C","150°C","200°C"],
+      "answer": "100°C"
+    },
+    {
+      "domain": "विज्ञान",
+      "question": "मानव रक्त लाल होता है क्योंकि इसमें होता है:",
+      "options":["CO₂","H₂O","O₂","HCl"],
+      "answer": "O₂"
+    },
+    {
+      "domain": "विज्ञान",
+      "question": "मानव शरीर का सबसे बड़ा अंग कौन सा है?",
+      "options": ["हृदय","मस्तिष्क","त्वचा","यकृत"],
+      "answer": "त्वचा"
+    },
+    {
+      "domain": "विज्ञान",
+      "question": "इनमें से कौन सा नवीकरणीय ऊर्जा स्रोत है?",
+      "options": ["कोयला","तेल","सौर ऊर्जा","प्राकृतिक गैस"],
+      "answer": "सौर ऊर्जा"
+    },
+    {
+      "domain": "कला",
+      "question": "“शेक्सपीयर” किसके लिए प्रसिद्ध हैं?",
+      "options": ["उपन्यास","कविताएँ व नाटक","चित्रकला","आविष्कार"],
+      "answer": "कविताएँ व नाटक"
+    },
+    {
+      "domain": "कला",
+      "question": "ताजमहल का निर्माण किसके शासनकाल में हुआ था?",
+      "options": ["अकबर","औरंगज़ेब","शाहजहाँ","बाबर"],
+      "answer": "शाहजहाँ"
+    },
+    {
+      "domain": "कला",
+      "question": "मूल रंग (Primary Colors) कौन से हैं?",
+      "options": ["लाल, नीला, हरा","लाल, पीला, नीला","पीला, हरा, नीला","लाल, सफेद, काला"],
+      "answer": "लाल, पीला, नीला"
+    },
+    {
+      "domain": "कला",
+      "question": "“गीतांजलि” किसने लिखी?",
+      "options": ["रवीन्द्रनाथ टैगोर","प्रेमचंद","महादेवी वर्मा","हरिवंश राय बच्चन"],
+      "answer": "रवीन्द्रनाथ टैगोर"
+    },
+    {
+      "domain": "कला",
+      "question": "“सितार” किसका प्रकार है?",
+      "options": ["चित्रकला शैली","संगीत वाद्य","नृत्य शैली","मूर्तिकला"],
+      "answer": "संगीत वाद्य"
+    },
+    {
+      "domain": "कला",
+      "question": "अजंता की गुफाएँ किसके लिए प्रसिद्ध हैं?",
+      "options": ["मूर्तियाँ","चित्रकला","वास्तुकला","नृत्य"],
+      "answer": "चित्रकला"
+    },
+    {
+      "domain": "कला",
+      "question": "भरतनाट्यम नृत्य किस राज्य से संबंधित है?",
+      "options": ["तमिलनाडु","पंजाब","राजस्थान","ओडिशा"],
+      "answer": "तमिलनाडु"
+    },
+    {
+      "domain": "कला",
+      "question": "“स्टारी नाइट” किसने बनाई?",
+      "options": ["मॉनेट","पिकासो","विन्सेंट वैन गॉग","रेम्ब्रांट"],
+      "answer": "विन्सेंट वैन गॉग"
+    },
+    {
+      "domain": "कला",
+      "question": "भारत का राष्ट्रीय गान “जन गण मन” किसने रचा?",
+      "options": ["बंकिम चंद्र चट्टोपाध्याय","रवीन्द्रनाथ टैगोर","सुबरमणियम भारती","इक़बाल"],
+      "answer": "रवीन्द्रनाथ टैगोर"
+    },
+    {
+      "domain": "कला",
+      "question": "“महाभारत” महाकाव्य के रचयिता कौन हैं?",
+      "options": ["वाल्मीकि","वेदव्यास","कालिदास","तुलसीदास"],
+      "answer": "वेदव्यास"
+    },
+    {
+      "domain": "वाणिज्य",
+      "question": "धन और व्यवसाय के अध्ययन को क्या कहते हैं?",
+      "options": ["अर्थशास्त्र","भौतिकी","वनस्पति विज्ञान","भूविज्ञान"],
+      "answer": "अर्थशास्त्र"
+    },
+    {
+      "domain": "वाणिज्य",
+      "question": "लेखांकन में, परिसंपत्तियाँ (Assets) = देयताएँ (Liabilities) + ?",
+      "options": ["लाभ","इक्विटी","आय","पूँजी"],
+      "answer": "इक्विटी"
+    },
+    {
+      "domain": "वाणिज्य",
+      "question": "भारत का सबसे बड़ा शेयर बाजार कौन सा है?",
+      "options": ["बीएसई","एनएसई","एमसीएक्स","सेबी"],
+      "answer": "एनएसई"
+    },
+    {
+      "domain": "वाणिज्य",
+      "question": "निम्न में से कौन उत्पादन का कारक नहीं है?",
+      "options": ["भूमि","श्रम","पूँजी","प्रदूषण"],
+      "answer": "प्रदूषण"
+    },
+    {
+      "domain": "वाणिज्य",
+      "question": "भारत का केंद्रीय बैंक कौन सा है?",
+      "options": ["एसबीआई","आरबीआई","आईसीआईसीआई","एचडीएफसी"],
+      "answer": "आरबीआई"
+    },
+    {
+      "domain": "वाणिज्य",
+      "question": "मांग तब बढ़ती है जब:",
+      "options": ["मूल्य बढ़ता है","मूल्य घटता है","आपूर्ति बढ़ती है","मुद्रास्फीति बढ़ती है"],
+      "answer": "मूल्य घटता है"
+    },
+    {
+      "domain": "वाणिज्य",
+      "question": "दोहरे लेखा पद्धति (Double-entry system) की शुरुआत किसने की?",
+      "options": ["एडम स्मिथ","लुका पैचिओली","केन्स","कार्ल मार्क्स"],
+      "answer": "लुका पैचिओली"
+    },
+    {
+      "domain": "वाणिज्य",
+      "question": "GDP का अर्थ है:",
+      "options": ["सकल घरेलू उत्पाद","सरकारी विकास योजना","सामान्य घरेलू नीति","सकल विभागीय लाभ"],
+      "answer": "सकल घरेलू उत्पाद"
+    },
+    {
+      "domain": "वाणिज्य",
+      "question": "बैलेंस शीट क्या दर्शाती है?",
+      "options": ["लाभ व हानि","परिसंपत्तियाँ व देयताएँ","बिक्री व खरीद","केवल नकद"],
+      "answer": "परिसंपत्तियाँ व देयताएँ"
+    },
+    {
+      "domain": "वाणिज्य",
+      "question": "भारत में जीएसटी लागू होने पर किस कर को हटाया गया?",
+      "options": ["वैट व सेवा कर","संपत्ति कर","आयकर","सीमा शुल्क"],
+      "answer": "वैट व सेवा कर"
+    }
+]

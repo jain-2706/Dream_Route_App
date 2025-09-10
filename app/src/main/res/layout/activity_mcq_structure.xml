@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".MCQ_structure"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:paddingStart="10dp"
+    android:paddingEnd="10dp">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/question"
+        android:text="The Chemical Formula of Water is :"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:textColor="#212121"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/option_1"
+        android:background="@drawable/options_mcq"
+        android:padding="10dp"
+        android:layout_marginTop="20dp"
+        android:text="Raju"
+        android:textAllCaps="false"
+        android:textSize="20dp"
+        android:textAlignment="textStart"
+        android:layout_gravity="start"
+
+
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/option_2"
+        android:background="@drawable/options_mcq"
+        android:layout_marginTop="10dp"
+        android:text="Raju"
+        android:textAllCaps="false"
+        android:textSize="20dp"
+        android:textAlignment="textStart"
+        android:layout_gravity="start"
+        android:padding="10dp"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/option_3"
+        android:background="@drawable/options_mcq"
+        android:layout_marginTop="10dp"
+        android:text="Raju"
+        android:textAllCaps="false"
+        android:textSize="20dp"
+        android:textAlignment="textStart"
+        android:layout_gravity="start"
+        android:padding="10dp"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/option_4"
+        android:background="@drawable/options_mcq"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:text="Raju"
+        android:textAllCaps="false"
+        android:textSize="20dp"
+        android:textAlignment="textStart"
+        android:layout_gravity="start"
+        android:padding="10dp"/>
+
+</LinearLayout>
