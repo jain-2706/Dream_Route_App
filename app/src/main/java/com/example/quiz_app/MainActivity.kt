@@ -1,4 +1,5 @@
 package com.example.quiz_app
+
 import android.view.animation.AnimationUtils
 
 import android.annotation.SuppressLint
@@ -26,6 +27,7 @@ import com.example.quiz_app.ui.theme.Quiz_AppTheme
 import android.graphics.Color
 import android.view.MotionEvent
 import android.view.View
+import android.net.Uri
 
 class MainActivity : ComponentActivity() {
     @SuppressLint("MissingInflatedId", "ClickableViewAccessibility")
@@ -42,13 +44,13 @@ class MainActivity : ComponentActivity() {
             // Set HTML text to TextView
             textView.text = Html.fromHtml(htmlText, Html.FROM_HTML_MODE_LEGACY)
         }
-    else
-    {
-        val textView = findViewById<TextView>(R.id.subtext)
-        val htmlText = "कुछ त्वरित प्रश्नों का उत्तर दें ताकि पता चल सके कि " +
-                "<b>गणित, विज्ञान, कला</b> या <b>वाणिज्य</b> आपके लिए सबसे उपयुक्त है"
-        textView.text = Html.fromHtml(htmlText, Html.FROM_HTML_MODE_LEGACY)
-    }
+        else
+        {
+            val textView = findViewById<TextView>(R.id.subtext)
+            val htmlText = "कुछ त्वरित प्रश्नों का उत्तर दें ताकि पता चल सके कि " +
+                    "<b>गणित, विज्ञान, कला</b> या <b>वाणिज्य</b> आपके लिए सबसे उपयुक्त है"
+            textView.text = Html.fromHtml(htmlText, Html.FROM_HTML_MODE_LEGACY)
+        }
         var maths: Button=findViewById<Button>(R.id.maths);
         var science: Button=findViewById<Button>(R.id.science);
         var arts: Button=findViewById<Button>(R.id.arts);
@@ -69,7 +71,7 @@ class MainActivity : ComponentActivity() {
         }
 
         maths.setOnClickListener {
-          var intent= Intent(this@MainActivity, Actual_Quiz_UI::class.java)
+            var intent= Intent(this@MainActivity, Actual_Quiz_UI::class.java)
             if(lan==0) {
                 intent.putParcelableArrayListExtra(
                     "Subject_List",
@@ -85,7 +87,7 @@ class MainActivity : ComponentActivity() {
                 );
                 intent.putExtra("lang",1)
             }
-          startActivity(intent)
+            startActivity(intent)
         }
         science.setOnClickListener { it->
             var intent= Intent(this@MainActivity, Actual_Quiz_UI::class.java)
@@ -126,29 +128,29 @@ class MainActivity : ComponentActivity() {
 
             startActivity(intent)
         }
-       commerce.setOnClickListener { it->
-           var intent= Intent(this@MainActivity, Actual_Quiz_UI::class.java)
-           if(lan==0) {
-               intent.putParcelableArrayListExtra(
-                   "Subject_List",
-                   Data_from_json(this@MainActivity).commerce_domainlist
-               );
-               intent.putExtra("lang",0)
-           }
-           else
-           {
-               intent.putParcelableArrayListExtra(
-                   "Subject_List",
-                   Data_from_json(this@MainActivity).commerce_hindi_list
-               );
-               intent.putExtra("lang",1)
-           }
-           startActivity(intent)
+        commerce.setOnClickListener { it->
+            var intent= Intent(this@MainActivity, Actual_Quiz_UI::class.java)
+            if(lan==0) {
+                intent.putParcelableArrayListExtra(
+                    "Subject_List",
+                    Data_from_json(this@MainActivity).commerce_domainlist
+                );
+                intent.putExtra("lang",0)
+            }
+            else
+            {
+                intent.putParcelableArrayListExtra(
+                    "Subject_List",
+                    Data_from_json(this@MainActivity).commerce_hindi_list
+                );
+                intent.putExtra("lang",1)
+            }
+            startActivity(intent)
         }
 
-       maths.setOnTouchListener { v, event ->
-              touching(v,event)
-            }
+        maths.setOnTouchListener { v, event ->
+            touching(v,event)
+        }
 
         science.setOnTouchListener {v,event->
             touching(v,event)
@@ -161,6 +163,10 @@ class MainActivity : ComponentActivity() {
         commerce.setOnTouchListener { v, event ->
             touching(v,event)
         }
+        // ATTENTION: This was auto-generated to handle app links.
+        val appLinkIntent: Intent = intent
+        val appLinkAction: String? = appLinkIntent.action
+        val appLinkData: Uri? = appLinkIntent.data
     }
     fun touching(v: View,event: MotionEvent): Boolean
     {

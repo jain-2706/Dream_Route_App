@@ -6,17 +6,29 @@
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/quiz"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@drawable/quiz"
         android:supportsRtl="true"
         android:theme="@style/Theme.Quiz_App">
         <activity
             android:name=".MainActivity"
-            android:exported="false" />
+            android:exported="false">
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="https" />
+                <data android:host="jain-2706.github.io" />
+                <data android:pathPattern="/" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".User_Progress"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar"/>
         <activity
             android:name=".Actual_Quiz_UI"
             android:exported="false" />

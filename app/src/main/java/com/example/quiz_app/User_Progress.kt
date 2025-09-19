@@ -12,7 +12,9 @@ import com.github.mikephil.charting.data.BarData
 import com.github.mikephil.charting.data.BarDataSet
 import com.github.mikephil.charting.data.BarEntry
 import android.graphics.Color
+import android.net.Uri
 import android.text.Html
+import android.widget.Button
 import android.widget.TextView
 import androidx.core.widget.TextViewCompat
 import com.github.mikephil.charting.components.XAxis
@@ -24,21 +26,18 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 
-
-
 class User_Progress : AppCompatActivity() {
     @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_user_progress)
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
+        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main3)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
         var txt_ge=findViewById<TextView>(R.id.gemini_text)
-
         var lan=intent.getIntExtra("lang",0)
         var correct=intent.getIntExtra("Correct",0)
         var wrong=intent.getIntExtra("Wrong",0)
@@ -69,7 +68,22 @@ class User_Progress : AppCompatActivity() {
         x_ax.position= XAxis.XAxisPosition.BOTTOM
         x_ax.granularity = 1f
 
+      var you_tube_btn=findViewById<Button>(R.id.btnYoutube);
+        var pdf_btn=findViewById<Button>(R.id.btnPdf)
+        var website_btn=findViewById<Button>(R.id.btnWebsite)
+        you_tube_btn.setOnClickListener {
+         var intent=Intent(Intent.ACTION_VIEW,Uri.parse("https://www.youtube.com"))
+            startActivity(intent)
 
+        }
+        pdf_btn.setOnClickListener {
+            var intent=Intent(Intent.ACTION_VIEW,Uri.parse("https://www.example.com/sample.pdf"))
+            startActivity(intent)
+        }
+        website_btn.setOnClickListener {
+            var intent=Intent(Intent.ACTION_VIEW,Uri.parse("https://developer.android.com"))
+            startActivity(intent)
+        }
 
 
     }
