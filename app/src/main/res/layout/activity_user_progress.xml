@@ -19,12 +19,13 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="📊 User Performance"
+
             android:textSize="28sp"
             android:textStyle="bold"
             android:textColor="#2C3E50"
             android:layout_marginTop="12dp"
-            android:layout_marginBottom="20dp"/>
+            android:layout_marginBottom="20dp"
+            android:id="@+id/performance"/>
 
         <!-- Chart Card -->
         <androidx.cardview.widget.CardView

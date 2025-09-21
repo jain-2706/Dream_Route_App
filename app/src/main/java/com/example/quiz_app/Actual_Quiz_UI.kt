@@ -27,6 +27,7 @@ class Actual_Quiz_UI : AppCompatActivity() {
         var getting_list=intent;
         var li=getting_list.getParcelableArrayListExtra<struct>("Subject_List")?: arrayListOf();
         var lan=intent.getIntExtra("lang",0)
+        var language_selected=intent.getStringExtra("language_selected")
         if(li== Data_from_json(this).math_domainlist)
         {
             txt_to_set.setText("Maths")
@@ -65,7 +66,7 @@ class Actual_Quiz_UI : AppCompatActivity() {
         var question_no=findViewById<TextView>(R.id.question_no);
         var seek_b=findViewById<SeekBar>(R.id.seek_b);
         var count_progress=findViewById<TextView>(R.id.progress)
-        var structure= structure_of_recycler_view(this@Actual_Quiz_UI,li,0,question_no,seek_b,count_progress,correct,wrong,lan);
+        var structure= structure_of_recycler_view(this@Actual_Quiz_UI,li,0,question_no,seek_b,count_progress,correct,wrong,lan,language_selected);
         recyclerView.layoutManager= LinearLayoutManager(this)
         recyclerView.adapter=structure
         structure.filter()

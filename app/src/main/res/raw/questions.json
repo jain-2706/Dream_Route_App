@@ -175,6 +175,12 @@
     "options":["VAT & Service Tax","Property Tax","Income Tax","Customs Duty"],
     "answer": "VAT & Service Tax"
   },
+  {
+    "domain": "Commerce",
+    "question": "Which accounting principle requires recognizing expenses in the same period as the revenues they help generate?",
+    "options": ["Matching Principle", "Conservatism Principle", "Revenue Recognition Principle", "Going Concern Principle"],
+    "answer": "Matching Principle"
+  },
 
   {
     "domain": "Arts",
@@ -230,6 +236,13 @@
     "options":["Poems & Plays","Novels","Paintings","Inventions"],
     "answer": "Poems & Plays"
   },
+  {
+    "domain": "Arts",
+    "question": "The Mona Lisa was painted by:",
+    "options": ["Leonardo da Vinci", "Pablo Picasso", "Vincent van Gogh", "Claude Monet"],
+    "answer": "Leonardo da Vinci"
+  },
+
     {
       "domain": "गणित",
       "question": "यदि f(x) = 3x^2 + 2x - 5, तो f'(x) क्या होगा?",
@@ -406,6 +419,12 @@
       "options":["वैट और सेवा कर","संपत्ति कर","आयकर","सीमा शुल्क"],
       "answer": "वैट और सेवा कर"
     },
+  {
+    "domain": "वाणिज्य",
+    "question": "लेखांकन का स्वर्णिम नियम कौन सा है?",
+    "options": ["डेबिट रिसीवर, क्रेडिट गिवर", "डेबिट कैश, क्रेडिट प्रॉफिट", "डेबिट ऑल, क्रेडिट नन", "डेबिट अकाउंट्स, क्रेडिट बुक्स"],
+    "answer": "डेबिट रिसीवर, क्रेडिट गिवर"
+  },
 
     {
       "domain": "कला",
@@ -460,7 +479,13 @@
       "question": "शेक्सपियर किसके लिए प्रसिद्ध हैं?",
       "options":["कविताएँ और नाटक","उपन्यास","चित्रकला","आविष्कार"],
       "answer": "कविताएँ और नाटक"
-    }
+    },
+  {
+    "domain": "कला",
+    "question": "अजन्ता की गुफाओं की भित्ति चित्रकला मुख्यतः किस धर्म से संबंधित है?",
+    "options": ["बौद्ध धर्म", "हिंदू धर्म", "जैन धर्म", "ईसाई धर्म"],
+    "answer": "बौद्ध धर्म"
+  }
   ]
 
 

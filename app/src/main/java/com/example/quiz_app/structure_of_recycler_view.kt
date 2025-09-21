@@ -18,20 +18,18 @@ import kotlinx.coroutines.Runnable
 
 @SuppressLint("SuspiciousIndentation")
 class structure_of_recycler_view(var cont: Context, val arr: ArrayList<struct>,var curr:Int,var question_no: TextView,var seek_b: SeekBar,var progress:TextView,
-    var correct:Int,var wrong: Int,var lan:Int): RecyclerView.Adapter<structure_of_recycler_view.ViewHolder>() {
+    var correct:Int,var wrong: Int,var lan:Int,var language_selected:String?): RecyclerView.Adapter<structure_of_recycler_view.ViewHolder>() {
     val filtered_List = ArrayList<struct>(arr);
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val a = LayoutInflater.from(cont).inflate(R.layout.activity_mcq_structure, parent, false);
         return ViewHolder(a)
     }
-
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
             holder.option_1.setBackgroundColor(Color.LTGRAY)
             holder.option_2.setBackgroundColor(Color.LTGRAY)
             holder.option_3.setBackgroundColor(Color.LTGRAY)
             holder.option_4.setBackgroundColor(Color.LTGRAY)
             enable(holder.option_1,holder.option_2,holder.option_3,holder.option_4)
-
             holder.txt.setText(filtered_List[position].question);
             holder.option_1.setText(filtered_List[position].options[0]);
             holder.option_2.setText(filtered_List[position].options[1]);
@@ -97,14 +95,25 @@ class structure_of_recycler_view(var cont: Context, val arr: ArrayList<struct>,v
                 progress.setText("${percentage}%")
                 filter()
             },1000)
-
         }
         else
         {
-           var intent= Intent(cont, User_Progress::class.java)
-           intent.putExtra("Correct",correct)
+            if(bt1.text==filtered_List[position].answer )
+            {
+                bt1.setBackgroundColor(Color.GREEN)
+                correct++
+            }
+            else
+            {
+                bt1.setBackgroundColor(Color.RED)
+                wrong++
+            }
+            var intent= Intent(cont, User_Progress::class.java)
+
+            intent.putExtra("Correct",correct)
             intent.putExtra("Wrong",wrong)
             intent.putExtra("lang",lan)
+            intent.putExtra("language_selected",language_selected)
             cont.startActivity(intent)
         }
         if(bt1.text==filtered_List[position].answer )

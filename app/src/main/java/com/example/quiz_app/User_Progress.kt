@@ -1,5 +1,4 @@
 package com.example.quiz_app
-
 import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
@@ -25,8 +24,8 @@ import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
-
 class User_Progress : AppCompatActivity() {
+
     @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -37,10 +36,16 @@ class User_Progress : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+
+
+
+
+        var performance=findViewById<TextView>(R.id.performance)
         var txt_ge=findViewById<TextView>(R.id.gemini_text)
         var lan=intent.getIntExtra("lang",0)
         var correct=intent.getIntExtra("Correct",0)
         var wrong=intent.getIntExtra("Wrong",0)
+        var language_selected=intent.getStringExtra("language_selected")
         var total=correct+wrong
         setting_progress(correct,wrong,total,txt_ge,lan)
         var bar_data_set= BarDataSet(getting(correct,wrong),"Quiz Stats").apply {
@@ -57,16 +62,19 @@ class User_Progress : AppCompatActivity() {
         }
         var x_ax=bar_chart.xAxis
         if(lan==0) {
+            performance.setText("YOUR PERFORMANCE")
             x_ax.valueFormatter =
                 IndexAxisValueFormatter(listOf<String>("Correct", " ", "Wrong", " ", "Accuracy"))
         }
         else
         {
+            performance.setText("आपका प्रदर्शन")
             x_ax.valueFormatter =
                 IndexAxisValueFormatter(listOf<String>("सही", " ", "गलत", " ", "सटीकता"))
         }
         x_ax.position= XAxis.XAxisPosition.BOTTOM
         x_ax.granularity = 1f
+
 
       var you_tube_btn=findViewById<Button>(R.id.btnYoutube);
         var pdf_btn=findViewById<Button>(R.id.btnPdf)
@@ -77,7 +85,10 @@ class User_Progress : AppCompatActivity() {
 
         }
         pdf_btn.setOnClickListener {
-            var intent=Intent(Intent.ACTION_VIEW,Uri.parse("https://www.example.com/sample.pdf"))
+//            var intent=Intent(Intent.ACTION_VIEW,Uri.parse("https://www.example.com/sample.pdf"))
+//            startActivity(intent)
+            var intent=Intent(this@User_Progress, career_and_resources_activity::class.java)
+            intent.putExtra("language_selected",language_selected)
             startActivity(intent)
         }
         website_btn.setOnClickListener {
@@ -86,7 +97,10 @@ class User_Progress : AppCompatActivity() {
         }
 
 
+
+
     }
+
     fun getting(correct:Int,wrong:Int):ArrayList<BarEntry>
     {
         var bar_entry_list = ArrayList<BarEntry>();
@@ -154,10 +168,7 @@ class User_Progress : AppCompatActivity() {
     - Use <p> for short motivational summary.
     - Give 1 improvement tip in <li>.
     - Add at least one <b>highlighted phrase</b> for encouragement.
-    - Add a small decorative emoji ⭐ or 🎯.
-   
-            
-            
+    - Add a small decorative emoji ⭐ or 🎯.       
         """.trimIndent()
            }
         CoroutineScope(Dispatchers.IO).launch {

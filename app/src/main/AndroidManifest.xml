@@ -12,6 +12,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Quiz_App">
         <activity
+            android:name=".Login_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".career_and_resources_activity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="false">
             <intent-filter android:autoVerify="true">
@@ -28,7 +34,7 @@
         <activity
             android:name=".User_Progress"
             android:exported="false"
-            android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar"/>
+            android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar" />
         <activity
             android:name=".Actual_Quiz_UI"
             android:exported="false" />

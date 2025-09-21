@@ -78,6 +78,7 @@ class MainActivity : ComponentActivity() {
                     Data_from_json(this@MainActivity).math_domainlist
                 );
                 intent.putExtra("lang",0)
+                intent.putExtra("language_selected","maths");
             }
             else
             {
@@ -86,6 +87,8 @@ class MainActivity : ComponentActivity() {
                     Data_from_json(this@MainActivity).math_hindi_list
                 );
                 intent.putExtra("lang",1)
+                intent.putExtra("language_selected","गणित");
+
             }
             startActivity(intent)
         }
@@ -97,6 +100,7 @@ class MainActivity : ComponentActivity() {
                     Data_from_json(this@MainActivity).science_domainlist
                 );
                 intent.putExtra("lang",0)
+                intent.putExtra("language_selected","science");
             }
             else
             {
@@ -105,6 +109,7 @@ class MainActivity : ComponentActivity() {
                     Data_from_json(this@MainActivity).science_hindi_list
                 );
                 intent.putExtra("lang",1)
+                intent.putExtra("language_selected","विज्ञान");
             }
             startActivity(intent)
         }
@@ -116,6 +121,7 @@ class MainActivity : ComponentActivity() {
                     Data_from_json(this@MainActivity).arts_domainlist
                 );
                 intent.putExtra("lang",0)
+                intent.putExtra("language_selected","arts");
             }
             else
             {
@@ -124,6 +130,7 @@ class MainActivity : ComponentActivity() {
                     Data_from_json(this@MainActivity).arts_hindi_list
                 );
                 intent.putExtra("lang",1)
+                intent.putExtra("language_selected","कला");
             }
 
             startActivity(intent)
@@ -136,6 +143,7 @@ class MainActivity : ComponentActivity() {
                     Data_from_json(this@MainActivity).commerce_domainlist
                 );
                 intent.putExtra("lang",0)
+                intent.putExtra("language_selected","commerce");
             }
             else
             {
@@ -144,6 +152,7 @@ class MainActivity : ComponentActivity() {
                     Data_from_json(this@MainActivity).commerce_hindi_list
                 );
                 intent.putExtra("lang",1)
+                intent.putExtra("language_selected","वाणिज्य");
             }
             startActivity(intent)
         }
