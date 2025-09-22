@@ -23,11 +23,21 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Log in"
+                android:text="Sign Up"
                 android:textStyle="bold"
                 android:textSize="30sp"
                 android:layout_gravity="center_horizontal">
             </TextView>
+            <EditText
+                android:layout_width="300sp"
+                android:layout_height="wrap_content"
+                android:hint="Enter Your Username"
+                android:id="@+id/username"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edittext_background"
+                android:padding="9dp"
+                android:inputType="text"
+                />
             <EditText
                 android:layout_width="300sp"
                 android:layout_height="wrap_content"
@@ -84,10 +94,10 @@
                     android:id="@+id/counsellor"/>
             </RadioGroup>
             <Button
-                android:id="@+id/loginBtn"
+                android:id="@+id/register"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Login"
+                android:text="Register"
                 android:layout_marginTop="24dp"
                 android:backgroundTint="@color/purple_500"
                 android:textColor="@android:color/white"

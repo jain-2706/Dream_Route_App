@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Quiz_App">
         <activity
+            android:name=".Sign_up_activity"
+            android:exported="false" />
+        <activity
             android:name=".Login_Activity"
             android:exported="false" />
         <activity
