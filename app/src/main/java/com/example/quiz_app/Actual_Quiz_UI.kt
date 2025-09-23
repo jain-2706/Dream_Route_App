@@ -1,11 +1,14 @@
 package com.example.quiz_app
 
 import android.annotation.SuppressLint
+import android.content.Intent
 import android.os.Bundle
+import android.widget.ImageButton
 import android.widget.SeekBar
 import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.widget.Toolbar
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -22,12 +25,26 @@ class Actual_Quiz_UI : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+
+
+        var toolbar=findViewById<Toolbar>(R.id.toolbar)
+
+        supportActionBar?.setDisplayShowTitleEnabled(false)
+
+
+        // Handle back button click
+        toolbar.setNavigationOnClickListener {
+            finish() // closes this activity & goes back
+        }
+
         var txt_to_set=findViewById<TextView>(R.id.domain);
         var recyclerView: RecyclerView=findViewById<RecyclerView>(R.id.recycler_view);
         var getting_list=intent;
         var li=getting_list.getParcelableArrayListExtra<struct>("Subject_List")?: arrayListOf();
         var lan=intent.getIntExtra("lang",0)
         var language_selected=intent.getStringExtra("language_selected")
+
+
         if(li== Data_from_json(this).math_domainlist)
         {
             txt_to_set.setText("Maths")
@@ -60,6 +77,7 @@ class Actual_Quiz_UI : AppCompatActivity() {
         {
             txt_to_set.setText("वाणिज्य")
         }
+
 
         var correct:Int=0
         var wrong:Int=0

@@ -85,7 +85,7 @@ class Sign_up_activity : AppCompatActivity() {
                       )
                   }
 
-                      var intent= Intent(this@Sign_up_activity, Language::class.java)
+                      var intent= Intent(this@Sign_up_activity, Dashboard_UI::class.java)
                       startActivity(intent)
 
               }

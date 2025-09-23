@@ -296,76 +296,6 @@ class career_and_resources_activity : AppCompatActivity() {
             else -> emptyList()
         }
 
-//        // --- Domain Header ---
-//        container.addView(createHeader(language))
-//
-//        // --- Career Section ---
-//        container.addView(createHeader("Career Options"))
-//        careerList.forEach { career ->
-//            container.addView(createCardItem(career))
-//        }
-//         // Divider
-//        container.addView(createDivider())
-//        // --- Resources Section ---
-//        container.addView(createHeader("Resources"))
-//        resourceList.forEach { (name, url) ->
-//            container.addView(createCardLinkItem(name, url))
-//        }
-//    }
-//
-//    private fun createHeader(title: String): TextView {
-//        return TextView(this).apply {
-//            text = title
-//            textSize = 22f
-//            setPadding(16, 24, 16, 8)
-//            setTypeface(null, android.graphics.Typeface.BOLD)
-//        }
-//    }
-//
-//    private fun createCardItem(text: String): CardView {
-//        val card = CardView(this)
-//        card.setContentPadding(16, 16, 16, 16)
-//        card.useCompatPadding = true
-//        card.radius = 12f
-//        card.cardElevation = 6f
-//
-//        val tv = TextView(this)
-//        tv.text = "• $text"
-//        tv.textSize = 16f
-//        card.addView(tv)
-//        return card
-//    }
-//
-//    private fun createCardLinkItem(name: String, url: String): CardView {
-//        val card = CardView(this)
-//        card.setContentPadding(16, 16, 16, 16)
-//        card.useCompatPadding = true
-//        card.radius = 12f
-//        card.cardElevation = 6f
-//
-//        val tv = TextView(this)
-//        tv.text = name
-//        tv.textSize = 16f
-//        tv.setTextColor(resources.getColor(android.R.color.holo_blue_dark, theme))
-//        tv.setOnClickListener {
-//            startActivity(Intent(Intent.ACTION_VIEW, Uri.parse(url)))
-//        }
-//
-//        card.addView(tv)
-//        return card
-//    }
-//}
-//
-//
-//
-//    private fun createDivider(): TextView {
-//        return TextView(this).apply {
-//            layoutParams = LinearLayout.LayoutParams(
-//                LinearLayout.LayoutParams.MATCH_PARENT, 2
-//            ).apply { setMargins(16, 16, 16, 16) }
-//            setBackgroundColor(resources.getColor(android.R.color.darker_gray, theme))
-//        }
-//    }
         var head = when (language) {
             "maths" -> "MATHS"
             "science" -> "SCIENCE"
@@ -453,9 +383,8 @@ class career_and_resources_activity : AppCompatActivity() {
             tv.setTextColor(Color.WHITE)
             tv.setOnClickListener {
                 startActivity(
-                    Intent(Intent.ACTION_VIEW, Uri.parse(url)).setPackage(
-                        "com.example.quiz_app"
-                    )
+                    Intent(Intent.ACTION_VIEW, Uri.parse(url))
+
                 )
             }
         }

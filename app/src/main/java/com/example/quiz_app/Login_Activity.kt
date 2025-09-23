@@ -66,7 +66,7 @@ class Login_Activity : AppCompatActivity() {
                             apply()
                         }
 
-                        var intent = Intent(this@Login_Activity, Language::class.java)
+                        var intent = Intent(this@Login_Activity, Dashboard_UI::class.java)
                         startActivity(intent)
                     }
 
@@ -114,5 +114,10 @@ class Login_Activity : AppCompatActivity() {
         }
 
 
+    }
+
+    override fun onBackPressed() {
+        finishAffinity()
+        super.onBackPressed()
     }
 }

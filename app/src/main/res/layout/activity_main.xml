@@ -1,163 +1,132 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:gravity="center"
-    android:orientation="vertical"
-    android:background="#FFFAF0"
-    android:paddingStart="30dp"
-    android:paddingEnd="30dp">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3F5F9"
+    android:paddingStart="20dp"
+    android:paddingEnd="20dp"
+    android:layout_marginTop="50dp">
+
     <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
-    <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:backgroundTint="#3949AB"
-        app:cardElevation="32dp"
-        app:cardCornerRadius="12dp"
-        android:background="@drawable/button_background">
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:paddingTop="30dp"
-            android:paddingBottom="20dp"
-            android:paddingStart="10dp">
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-        <TextView
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+
+        android:paddingTop="20dp"
+        android:paddingBottom="40dp">
+
+        <!-- Gradient Top Card -->
+        <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Stream Finder"
-            android:textSize="20sp"
-            android:textColor="#fff"
-            android:textStyle="bold" />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Explore All Options"
-            android:textSize="20sp"
-            android:textColor="#fff"
-            android:textStyle="bold"/>
-            </LinearLayout>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Select a Domain "
-            android:textColor="#fff"
-            android:textSize="13sp"
-            android:background="@drawable/background"
-            android:layout_marginStart="25dp"
-            android:layout_marginEnd="10dp"
-            android:gravity="center"
-           />
-        </LinearLayout>
-    </androidx.cardview.widget.CardView>
+            app:cardCornerRadius="20dp"
+            app:cardElevation="8dp"
+            android:layout_marginBottom="24dp"
+            app:cardBackgroundColor="@drawable/gradient_top_card">
 
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-            <androidx.cardview.widget.CardView
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:cardElevation="32dp"
-                app:cardCornerRadius="12dp"
-                >
-                <LinearLayout
+                android:orientation="vertical"
+                android:padding="24dp">
+
+                <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:paddingTop="20dp"
-                    android:paddingBottom="20dp"
-                    android:paddingStart="10dp">
-        <TextView
-            android:layout_width="wrap_content"
+                    android:text="Stream Finder"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:textColor="#FFFFFF"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Explore all options and find your best-fit stream"
+                    android:textSize="16sp"
+                    android:textColor="#E0E0E0"
+                    android:layout_marginTop="8dp"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Instruction Card -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Discover Your Best-Fit Stream"
-            android:textSize="25dp"
-            android:textStyle="bold"
-            android:textColor="#000"/>
-           <TextView
-               android:layout_width="wrap_content"
-               android:layout_height="wrap_content"
-               android:textSize="20dp"
-               android:id="@+id/subtext"
-               tools:text="Answer a few quick questions to find out whether Maths, Science, Arts or Commerce suits your best"
-              />
-                   <LinearLayout
-                       android:layout_width="wrap_content"
-                       android:layout_height="wrap_content"
-                       android:orientation="horizontal"
-                       android:layout_marginTop="50dp"
-                     >
-                           <Button
-                               android:layout_width="wrap_content"
-                               android:layout_height="wrap_content"
-                               android:text="Maths"
-                               android:textAllCaps="false"
-                               android:textStyle="bold"
-                               android:drawableTop="@drawable/number_svg"
-                               android:layout_marginStart="30dp"
-                               android:shadowColor="#BB000000"
-                               android:background="#fff"
-                               android:id="@+id/maths"
-                           />
-                           <Button
-                               android:layout_width="wrap_content"
-                               android:layout_height="wrap_content"
-                               android:text="Science"
-                               android:textAllCaps="false"
-                               android:textStyle="bold"
-                               android:drawableTop="@drawable/art_svg"
-                               android:layout_marginStart="50dp"
-                               android:elevation="10dp"
-                               android:shadowColor="#BB000000"
-                               android:background="#fff"
-                               android:id="@+id/science"
-                               />
-                   </LinearLayout>
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal"
-                        android:layout_marginTop="40dp">
-                            <Button
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="Arts"
-                                android:textAllCaps="false"
-                                android:textStyle="bold"
-                                android:drawableTop="@drawable/brush_svg"
-                                android:layout_marginStart="30dp"
-                                android:elevation="4000dp"
-                                android:shadowColor="#BB000000"
-                                android:id="@+id/arts"
-                                android:background="#fff" />
+            app:cardCornerRadius="16dp"
+            app:cardElevation="6dp"
+            android:layout_marginBottom="24dp"
+            android:background="#FFFFFF">
 
-                            <Button
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="Commerce"
-                                android:textAllCaps="false"
-                                android:textStyle="bold"
-                                android:drawableTop="@drawable/commerce_svg"
-                                android:layout_marginStart="50dp"
-                                android:elevation="4000dp"
-                                android:shadowColor="#BB000000"
-                                android:background="#fff"
-                                android:id="@+id/commerce"/>
-                    </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="24dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Discover Your Best-Fit Stream"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:textColor="#212121"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/subtext"
+                    android:textSize="16sp"
+                    android:textColor="#616161"
+                    android:layout_marginTop="12dp"
+                    tools:text="Answer a few quick questions to find out whether Maths, Science, Arts, or Commerce suits you best"/>
+
+                <!-- Stream Buttons -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="24dp"
+                    android:gravity="center">
+
+                    <Button
+                        android:id="@+id/maths"
+                        style="@style/StreamButtonStyle"
+                        android:text="Maths"
+                        android:drawableTop="@drawable/number_svg"
+                        android:layout_marginEnd="16dp"/>
+
+                    <Button
+                        android:id="@+id/science"
+                        style="@style/StreamButtonStyle"
+                        android:text="Science"
+                        android:drawableTop="@drawable/art_svg"/>
                 </LinearLayout>
-            </androidx.cardview.widget.CardView>
-        </LinearLayout>
 
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="16dp"
+                    android:gravity="center">
+
+                    <Button
+                        android:id="@+id/arts"
+                        style="@style/StreamButtonStyle"
+                        android:text="Arts"
+                        android:drawableTop="@drawable/brush_svg"
+                        android:layout_marginEnd="16dp"/>
+
+                    <Button
+                        android:id="@+id/commerce"
+                        style="@style/StreamButtonStyle"
+                        android:text="Commerce"
+                        android:drawableTop="@drawable/commerce_svg"/>
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
     </LinearLayout>
-</LinearLayout>
+</ScrollView>

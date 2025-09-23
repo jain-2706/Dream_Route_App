@@ -32,7 +32,7 @@ class Welcome_Activity : AppCompatActivity() {
         else
         {
             Handler(Looper.getMainLooper()).postDelayed({
-                var intt = Intent(this@Welcome_Activity, Language::class.java)
+                var intt = Intent(this@Welcome_Activity, Dashboard_UI::class.java)
                 startActivity(intt)
             },2000
             )
