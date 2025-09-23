@@ -1,5 +1,6 @@
 <resources>
     <string name="app_name">Quiz_App</string>
     <string name="subtext">Answer a few quick questions to find out whether Naths,Science,Arts or Comerce suits your best</string>
-    <string name="language">Choose Your Preferred Language</string>
+    <string name="language">Select Language</string>
+    <string name="sign_up">"Don't have an account"</string>
 </resources>

@@ -25,10 +25,10 @@ class structure_of_recycler_view(var cont: Context, val arr: ArrayList<struct>,v
         return ViewHolder(a)
     }
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-            holder.option_1.setBackgroundColor(Color.LTGRAY)
-            holder.option_2.setBackgroundColor(Color.LTGRAY)
-            holder.option_3.setBackgroundColor(Color.LTGRAY)
-            holder.option_4.setBackgroundColor(Color.LTGRAY)
+            holder.option_1.setBackgroundColor(Color.WHITE)
+            holder.option_2.setBackgroundColor(Color.WHITE)
+            holder.option_3.setBackgroundColor(Color.WHITE)
+            holder.option_4.setBackgroundColor(Color.WHITE)
             enable(holder.option_1,holder.option_2,holder.option_3,holder.option_4)
             holder.txt.setText(filtered_List[position].question);
             holder.option_1.setText(filtered_List[position].options[0]);

@@ -12,10 +12,14 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Quiz_App">
         <activity
+
+            android:name=".Login_Activity"
+            android:exported="false" />
+        <activity
             android:name=".Sign_up_activity"
             android:exported="false" />
         <activity
-            android:name=".Login_Activity"
+            android:name=".Language"
             android:exported="false" />
         <activity
             android:name=".career_and_resources_activity"
@@ -45,7 +49,7 @@
             android:name=".MCQ_structure"
             android:exported="false" />
         <activity
-            android:name=".Language"
+            android:name=".Welcome_Activity"
             android:exported="true"
             android:label="@string/app_name"
             android:theme="@style/Theme.Quiz_App">

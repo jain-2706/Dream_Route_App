@@ -19,7 +19,6 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-
             android:textSize="28sp"
             android:textStyle="bold"
             android:textColor="#2C3E50"
@@ -73,43 +72,43 @@
             android:layout_marginTop="20dp"
             android:layout_marginBottom="12dp"/>
 
-        <!-- Resource Buttons -->
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/btnYoutube"
-            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="📺 Watch Video"
-            android:textSize="16sp"
-            android:textAllCaps="false"
-            android:layout_marginBottom="12dp"
-            app:strokeColor="@color/purple_500"
-            app:strokeWidth="2dp"
-            android:textColor="@color/purple_500"/>
+<!--        &lt;!&ndash; Resource Buttons &ndash;&gt;-->
+<!--        <com.google.android.material.button.MaterialButton-->
+<!--            android:id="@+id/btnYoutube"-->
+<!--            style="@style/Widget.MaterialComponents.Button.OutlinedButton"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="📺 Watch Video"-->
+<!--            android:textSize="16sp"-->
+<!--            android:textAllCaps="false"-->
+<!--            android:layout_marginBottom="12dp"-->
+<!--            app:strokeColor="@color/purple_500"-->
+<!--            app:strokeWidth="2dp"-->
+<!--            android:textColor="@color/purple_500"/>-->
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btnPdf"
             style="@style/Widget.MaterialComponents.Button.OutlinedButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="📘 Open PDF Notes"
-            android:textSize="16sp"
+            android:text="📘 Career and Resources"
+            android:textSize="18sp"
             android:textAllCaps="false"
             android:layout_marginBottom="12dp"
             app:strokeColor="@color/teal_700"
             app:strokeWidth="2dp"
-            android:textColor="@color/teal_700"/>
+            android:textColor="@color/purple_500"/>
 
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/btnWebsite"
-            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="🌐 Visit Website"
-            android:textSize="16sp"
-            android:textAllCaps="false"
-            app:strokeColor="@color/teal_700"
-            app:strokeWidth="2dp"
-            android:textColor="@color/teal_700"/>
+<!--        <com.google.android.material.button.MaterialButton-->
+<!--            android:id="@+id/btnWebsite"-->
+<!--            style="@style/Widget.MaterialComponents.Button.OutlinedButton"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="🌐 Visit Website"-->
+<!--            android:textSize="16sp"-->
+<!--            android:textAllCaps="false"-->
+<!--            app:strokeColor="@color/teal_700"-->
+<!--            app:strokeWidth="2dp"-->
+<!--            android:textColor="@color/teal_700"/>-->
     </LinearLayout>
 </ScrollView>

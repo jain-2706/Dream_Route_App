@@ -52,7 +52,6 @@ class User_Progress : AppCompatActivity() {
             valueTextSize=10f
             colors=mutableListOf<Int>(Color.GREEN,Color.RED,Color.BLUE)
         }
-
         var bar_chart=findViewById<BarChart>(R.id.bar_chart).apply {
             data= BarData(bar_data_set)
             data.barWidth=0.78f
@@ -76,14 +75,14 @@ class User_Progress : AppCompatActivity() {
         x_ax.granularity = 1f
 
 
-      var you_tube_btn=findViewById<Button>(R.id.btnYoutube);
+//      var you_tube_btn=findViewById<Button>(R.id.btnYoutube);
         var pdf_btn=findViewById<Button>(R.id.btnPdf)
-        var website_btn=findViewById<Button>(R.id.btnWebsite)
-        you_tube_btn.setOnClickListener {
-         var intent=Intent(Intent.ACTION_VIEW,Uri.parse("https://www.youtube.com"))
-            startActivity(intent)
-
-        }
+//        var website_btn=findViewById<Button>(R.id.btnWebsite)
+//        you_tube_btn.setOnClickListener {
+//         var intent=Intent(Intent.ACTION_VIEW,Uri.parse("https://www.youtube.com"))
+//            startActivity(intent)
+//
+//        }
         pdf_btn.setOnClickListener {
 //            var intent=Intent(Intent.ACTION_VIEW,Uri.parse("https://www.example.com/sample.pdf"))
 //            startActivity(intent)
@@ -91,10 +90,10 @@ class User_Progress : AppCompatActivity() {
             intent.putExtra("language_selected",language_selected)
             startActivity(intent)
         }
-        website_btn.setOnClickListener {
-            var intent=Intent(Intent.ACTION_VIEW,Uri.parse("https://developer.android.com"))
-            startActivity(intent)
-        }
+//        website_btn.setOnClickListener {
+//            var intent=Intent(Intent.ACTION_VIEW,Uri.parse("https://developer.android.com"))
+//            startActivity(intent)
+//        }
 
 
 

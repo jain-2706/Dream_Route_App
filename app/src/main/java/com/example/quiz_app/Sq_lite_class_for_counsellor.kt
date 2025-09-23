@@ -19,7 +19,7 @@ class Sq_lite_class_for_counsellor(context: Context): SQLiteOpenHelper(context, 
     override fun onCreate(db: SQLiteDatabase?) {
     var query: String="""
         CREATE TABLE counsellor(
-        id PRIMARY KEY AUTO_INCREMENT,
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
         Username VARCHAR(50) NOT NULL,
         Email VARCHAR(100) NOT NULL UNIQUE,
         Password TEXT NOT NULL)
@@ -45,8 +45,19 @@ class Sq_lite_class_for_counsellor(context: Context): SQLiteOpenHelper(context, 
     fun update_new_user(old_email:String,old_password:String,new_email:String,new_password:String){
 
     }
-
-
+    fun select_new_user(): ArrayList<user_details>
+    {
+        var selecting=this.readableDatabase
+        var c1=selecting.rawQuery("SELECT Username,Email,Password FROM counsellor",null)
+        var arr= ArrayList<user_details>()
+        while(c1.moveToNext())
+        {
+            var user_details= user_details(c1.getString(0),c1.getString(1),c1.getString(2))
+            arr.add(user_details)
+        }
+        c1.close()
+        return arr
+    }
 
 
 }
