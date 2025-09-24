@@ -20,7 +20,7 @@
             android:id="@+id/appLogo"
             android:layout_width="120dp"
             android:layout_height="120dp"
-            android:src="@drawable/quiz"
+            android:src="@drawable/app_logo_naya"
             android:contentDescription="App Logo"
             android:layout_marginBottom="16dp"/>
 
@@ -29,7 +29,7 @@
             android:id="@+id/appTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="QuizMaster"
+            android:text="Dream Route"
             android:textSize="34sp"
             android:textStyle="bold"
             android:textColor="@android:color/white"
@@ -41,7 +41,7 @@
             android:id="@+id/appSubtitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Test Your Knowledge And Have Fun!"
+            android:text="Explore Possibilities, Build Your Future."
             android:textSize="20sp"
             android:textColor="@android:color/white"
             android:gravity="center"

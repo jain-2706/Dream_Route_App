@@ -156,10 +156,67 @@
                         android:layout_height="wrap_content"
                         android:backgroundTint="#3D5AFE"
                         android:text="Get Started"
-                        android:textColor="@android:color/white" />
+                        android:textColor="@android:color/white"
+                        android:id="@+id/explore_colleges_button"/>
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
+            <LinearLayout
+                android:id="@+id/college_search_form_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:layout_marginTop="20dp"
+                android:visibility="gone">
+                <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Find Your College"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="16dp"/>
 
+                <EditText
+                    android:id="@+id/city_edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="City"
+                    android:inputType="textCapWords"
+                    android:layout_marginBottom="8dp"/>
+
+                <EditText
+                    android:id="@+id/state_edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="State"
+                    android:inputType="textCapWords"
+                    android:layout_marginBottom="8dp"/>
+
+
+
+                <Button
+                    android:id="@+id/search_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Search"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/college_details_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:padding="8dp">
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerColleges"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipToPadding="false"
+                android:paddingBottom="16dp"/>
+            </LinearLayout>
             <!-- Card 2: Generate Career Roadmap -->
             <androidx.cardview.widget.CardView
                 android:layout_width="wrap_content"

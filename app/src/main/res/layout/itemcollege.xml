@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="12dp"
+    android:orientation="vertical"
+    android:background="@drawable/bg_item_card"
+    android:layout_margin="8dp">
+
+    <TextView
+        android:id="@+id/tvCollegeName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="College Name"
+        android:textStyle="bold"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tvCityState"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="City, State"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tvStudentSize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Students: 0"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tvAcademicCost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Academic Cost: --"
+        android:textSize="14sp" />
+
+</LinearLayout>
