@@ -16,6 +16,7 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+
 import retrofit2.Callback
 import retrofit2.Response
 import retrofit2.Call
@@ -34,10 +35,8 @@ class Dashboard_UI : AppCompatActivity() {
     lateinit var stateEdit:EditText
     lateinit var courseEdit:EditText
     lateinit var searchButton :Button
-
-
     lateinit var explore_colleges_button :Button
-
+    lateinit var roadmap_button:Button
     @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -54,8 +53,9 @@ class Dashboard_UI : AppCompatActivity() {
         stateEdit= findViewById<EditText>(R.id.state_edit_text)
 
         searchButton= findViewById<Button>(R.id.search_button)
-
+        roadmap_button=findViewById(R.id.roadmap_button)
         explore_colleges_button= findViewById<Button>(R.id.explore_colleges_button)
+
         var quiz_started = findViewById<Button>(R.id.confused_btn)
         quiz_started.setOnClickListener {
             var intent = Intent(this, Language::class.java)
@@ -86,6 +86,10 @@ class Dashboard_UI : AppCompatActivity() {
                 }
             }
 
+        }
+        roadmap_button.setOnClickListener {
+            var intent=Intent(this, Roadmap_Activity::class.java)
+            startActivity(intent)
         }
     }
 

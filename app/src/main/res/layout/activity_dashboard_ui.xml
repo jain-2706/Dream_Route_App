@@ -265,7 +265,8 @@
                         android:layout_height="wrap_content"
                         android:backgroundTint="#4CAF50"
                         android:text="Get Started"
-                        android:textColor="@android:color/white" />
+                        android:textColor="@android:color/white"
+                        android:id="@+id/roadmap_button"/>
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
