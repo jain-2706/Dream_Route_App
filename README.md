@@ -1,6 +1,7 @@
-🚀 DreamRoot – Stream & Career Guidance App
-
-DreamRoot is an Android application designed to help students discover their ideal academic stream (Maths, Science, Arts, Commerce) through an interactive quiz and provide career guidance with learning resources.
+<h1 align="center">🚀 DreamRoot – Stream & Career Guidance App</h1>
+<p align="center">
+  Discover your ideal stream with AI-powered quiz & career guidance
+</p>
 
 ## ✨ Features
 
