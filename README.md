@@ -2,48 +2,34 @@
 
 DreamRoot is an Android application designed to help students discover their ideal academic stream (Maths, Science, Arts, Commerce) through an interactive quiz and provide career guidance with learning resources.
 
-📱 Features
+## ✨ Features
 
-✨ Stream Finder
+### 🔹 Stream Finder
+- Helps users choose the best-fit stream based on interests
 
-Helps users choose the best-fit stream based on interests
+### 🔹 Interactive Quiz System
+- MCQ-based questions  
+- Real-time progress tracking  
+- Multi-language support (English + Hindi)
 
-🧠 Interactive Quiz System
+### 🔹 Performance Analysis
+- Correct answers  
+- Wrong answers  
+- Accuracy  
 
-MCQ-based questions
-Real-time progress tracking
-Multi-language support (English + Hindi)
+### 🔹 Career Suggestions
+- Doctor  
+- Pharmacist  
+- Researcher  
+- Biotechnologist  
+- Astronomer  
 
-📊 Performance Analysis
-
-Displays:
-Correct answers
-Wrong answers
-Accuracy
-
-🎯 Career Suggestions
-
-Shows career paths based on selected stream
-Example (Science):
-Doctor
-Pharmacist
-Researcher
-Biotechnologist
-Astronomer
-
-📚 Learning Resources Integration
-
-Curated platforms like:
-MIT OpenCourseWare
-Coursera
-Khan Academy
-NASA
-National Geographic
-
-🌐 Multi-language Support
-
-English & Hindi UI support
-
+### 🔹 Learning Resources
+- MIT OpenCourseWare  
+- Coursera  
+- Khan Academy  
+- NASA  
+- National Geographic  
 
 ## 📸 Screenshots
 
