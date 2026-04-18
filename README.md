@@ -43,3 +43,16 @@ National Geographic
 🌐 Multi-language Support
 
 English & Hindi UI support
+
+
+## 📸 Screenshots
+
+<p align="center">
+  <img src="screenshots/home.png" width="250"/>
+  <img src="screenshots/quiz.png" width="250"/>
+  <img src="screenshots/result.png" width="250"/>
+</p>
+
+<p align="center">
+  <img src="screenshots/career.png" width="250"/>
+</p>
