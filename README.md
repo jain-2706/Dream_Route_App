@@ -1,45 +1,105 @@
-<h1 align="center">🚀 DreamRoot – Stream & Career Guidance App</h1>
-<p align="center">
-  Discover your ideal stream with AI-powered quiz & career guidance
-</p>
+# 🚀 DreamRoot – Stream & Career Guidance App
 
-## ✨ Features
+Discover your ideal stream with AI-powered quiz & career guidance.
 
-### 🔹 Stream Finder
-- Helps users choose the best-fit stream based on interests
+---
 
-### 🔹 Interactive Quiz System
-- MCQ-based questions  
+## 📌 About the Project
+
+DreamRoot is an Android application designed to help students identify the most suitable academic stream (**Science, Commerce, Arts, Maths**) based on their interests and performance in an interactive quiz system.
+
+The app uses structured logic and AI-assisted suggestions to guide students toward better career decisions along with curated learning resources.
+
+---
+
+## ✨ Features Overview
+
+DreamRoot includes multiple intelligent modules working together as a complete guidance system:
+
+- Stream selection based on interest analysis  
+- Interactive MCQ-based quiz system  
 - Real-time progress tracking  
-- Multi-language support (English + Hindi)
+- Bilingual support (English + Hindi)  
+- Detailed performance analytics  
+- AI-based career recommendations  
+- Curated external learning resources  
 
-### 🔹 Performance Analysis
+Each module is designed to work independently while contributing to the final career prediction system.
+
+---
+
+## 🧠 Core Functional Modules
+
+### 🎯 Stream Finder
+Analyzes user preferences and suggests the most suitable academic stream using quiz-based evaluation logic.
+
+---
+
+### ❓ Interactive Quiz System
+Provides a structured MCQ-based assessment with real-time progress tracking and multilingual support.
+
+---
+
+### 📊 Performance Analysis
+Generates detailed insights including:
 - Correct answers  
-- Wrong answers  
-- Accuracy  
+- Incorrect answers  
+- Accuracy percentage  
 
-### 🔹 Career Suggestions
-- Doctor  
-- Pharmacist  
-- Researcher  
-- Biotechnologist  
-- Astronomer  
+---
 
-### 🔹 Learning Resources
-- MIT OpenCourseWare  
-- Coursera  
-- Khan Academy  
-- NASA  
-- National Geographic  
+### 🧭 Career Suggestions
+Recommends career paths based on user performance:
+Doctor, Pharmacist, Researcher, Biotechnologist, Astronomer, and more.
 
-## 📸 Screenshots
+---
 
-<p align="center">
-  <img src="screenshots/home.png" width="250"/>
-  <img src="screenshots/quiz.png" width="250"/>
-  <img src="screenshots/result.png" width="250"/>
-</p>
+### 📚 Learning Resources
+Provides access to top educational platforms:
+MIT OpenCourseWare, Coursera, Khan Academy, NASA, National Geographic.
 
-<p align="center">
-  <img src="screenshots/career.png" width="250"/>
-</p>
+---
+
+### 🌐 Language Support
+Supports both English and Hindi for wider accessibility and improved user experience.
+
+---
+
+## 📸 App Screenshots
+
+### 🏠 Main Interface
+<img src="app/screenshots/MainScreen.jpeg" width="220"/>
+
+---
+
+### 🌐 Language Selection (Bilingual Support)
+<img src="app/screenshots/BilingualSupport.jpeg" width="220"/>
+
+---
+
+### 📊 Performance Dashboard
+<img src="app/screenshots/PerformanceSection.jpeg" width="220"/>
+
+---
+
+### 🧑‍🎓 Career Recommendation Screen
+<img src="screenshots/Career.jpeg" width="220"/>
+
+---
+
+## 🛠️ Tech Stack
+
+- **Programming Language:** Java  
+- **UI Framework:** XML + Material Design  
+- **IDE:** Android Studio  
+- **Charts Library:** MPAndroidChart  
+- **AI Integration:** Gemini API  
+
+---
+
+## ⚙️ Installation Guide
+
+Clone this repository:
+
+```bash
+git clone https://github.com/jain-2706/Dream_Route_App.git
