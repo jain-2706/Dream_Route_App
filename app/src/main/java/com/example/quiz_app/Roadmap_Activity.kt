@@ -2,11 +2,13 @@ package com.example.quiz_app
 import android.os.Bundle
 import com.example.quiz_app.BuildConfig
 import android.util.Log
+import android.view.View
 import android.webkit.WebSettings
 import android.webkit.WebView
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.quiz_app.R
 import com.google.ai.client.generativeai.GenerativeModel
@@ -24,37 +26,52 @@ class Roadmap_Activity : AppCompatActivity() {
     private lateinit var domainEditText: EditText
     private lateinit var generateButton: Button
     private lateinit var roadmap_webview: WebView
+    var f = 0;
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_roadmap)
-        classEditText=findViewById(R.id.inputClass)
-        streamEditText=findViewById(R.id.inputStream)
-        careerEditText=findViewById(R.id.inputCareer)
-        domainEditText=findViewById(R.id.inputDomain)
-        generateButton=findViewById(R.id.generateBtn)
-        roadmap_webview=findViewById(R.id.roadmapWebView)
-        roadmap_webview.settings.javaScriptEnabled=true
+        classEditText = findViewById(R.id.inputClass)
+        streamEditText = findViewById(R.id.inputStream)
+        careerEditText = findViewById(R.id.inputCareer)
+        domainEditText = findViewById(R.id.inputDomain)
+        generateButton = findViewById(R.id.generateBtn)
+        roadmap_webview = findViewById(R.id.roadmapWebView)
+        roadmap_webview.settings.javaScriptEnabled = true
         roadmap_webview.settings.cacheMode = WebSettings.LOAD_NO_CACHE
         generateButton.setOnClickListener {
 
-            var stream=streamEditText.text.toString()
-            var career=careerEditText.text.toString()
-            var domain=domainEditText.text.toString()
-            var class_p= classEditText.text.toString()
-
-            val user_input="""
+            var stream = streamEditText.text.toString()
+            var career = careerEditText.text.toString()
+            var domain = domainEditText.text.toString()
+            var class_p = classEditText.text.toString()
+            if (stream.isEmpty() || career.isEmpty() || domain.isEmpty() || class_p.isEmpty()) {
+//                Toast.makeText(
+//                    "this@Roadmap_Activity,⚠️Pls fill all the Fields Carefully",
+//                    Toast.LENGTH_LONG
+//                ).show()
+            } else {
+                val user_input = """
             Class:${class_p},
             Stream:${stream}.
             Domain:${domain},
             Career:${career}
         """.trimIndent()
-         setting_progress(user_input)
+                setting_progress(user_input)
+            }
         }
     }
-    fun setting_progress(user_input:String) {
-        roadmap_webview=findViewById(R.id.roadmapWebView)
+
+    fun setting_progress(user_input: String) {
+        classEditText.visibility = View.GONE
+        streamEditText.visibility = View.GONE
+        careerEditText.visibility = View.GONE
+        domainEditText.visibility = View.GONE
+        generateButton.visibility = View.GONE
+        roadmap_webview = findViewById(R.id.roadmapWebView)
+
+        f = 1
         val model = GenerativeModel(
             modelName = "gemini-2.5-pro",
             apiKey = BuildConfig.API_KEY
@@ -77,17 +94,19 @@ class Roadmap_Activity : AppCompatActivity() {
                     "graph TD; No valid graph found"
                 }
                 withContext(Dispatchers.Main) {
-                    var ans=buildMermaidHtml(cleanReply)
+                    var ans = buildMermaidHtml(cleanReply)
                     roadmap_webview.loadDataWithBaseURL(null, ans, "text/html", "UTF-8", null)
                 }
             } catch (e: Exception) {
                 withContext(Dispatchers.Main) {
-                   Log.e("Error","Dikkat",e)
+                    Log.e("Error", "Dikkat", e)
                 }
             }
-        }}
+        }
+    }
+
     private fun buildMermaidHtml(graph: String): String {
-            return """
+        return """
             <!DOCTYPE html>
             <html>
             <head>
@@ -104,8 +123,24 @@ class Roadmap_Activity : AppCompatActivity() {
             </body>
             </html>
         """
+    }
+
+    @Deprecated("This method has been deprecated in favor of using the\n      {@link OnBackPressedDispatcher} via {@link #getOnBackPressedDispatcher()}.\n      The OnBackPressedDispatcher controls how back button events are dispatched\n      to one or more {@link OnBackPressedCallback} objects.")
+    override fun onBackPressed() {
+        if(f==1)
+        {
+            classEditText.visibility = View.VISIBLE
+            streamEditText.visibility = View.VISIBLE
+            careerEditText.visibility = View.VISIBLE
+            domainEditText.visibility = View.VISIBLE
+            generateButton.visibility = View.VISIBLE
         }
+        else
+        {
 
-
-
+        }
+        super.onBackPressed()
+    }
 }
+
+
