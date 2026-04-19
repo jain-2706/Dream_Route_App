@@ -83,9 +83,9 @@ User choses language based on his preference.
 
 
 ### ❓ Step 3: Quiz Interface
-User choses language based on his preference.
+User answers MCQ-based questions.
 
-<img src="app/screenshots/QuizSection.jpeg" width="220"/>
+<img src="app/screenshots/Quiz Question.jpeg" width="220"/>
 
 ---
 
