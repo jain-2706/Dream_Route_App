@@ -36,7 +36,7 @@
 
 <p align="center">
   <img src="app/screenshots/MainScreen.jpeg" width="250"/>
-  <img src="app/screenshots/BilingialSupport.jpeg" width="250"/>
+  <img src="app/screenshots/BilingualSupport.jpeg" width="250"/>
   <img src="screenshots/result.png" width="250"/>
 </p>
 
