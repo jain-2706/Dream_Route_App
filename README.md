@@ -35,10 +35,10 @@
 ## 📸 Screenshots
 
 <p align="center">
-  <img src="app/screenshots/MainScreen.jpeg" width="400" height="200/>
-  <img src="app/screenshots/BilingualSupport.jpeg" width="400" height="200/>
-  <img src="app/screenshots/PerformanceSection.jpeg" width="400"height="200/>
-    <img src="app/screenshots/PerformanceSection.jpeg" width="400"height="200/>
+  <img src="app/screenshots/MainScreen.jpeg" width="400" />
+  <img src="app/screenshots/BilingualSupport.jpeg" width="400"/>
+  <img src="app/screenshots/PerformanceSection.jpeg" width="400"/>
+    <img src="app/screenshots/PerformanceSection.jpeg" width="400"/>
 </p>
 
 <p align="center">
