@@ -35,7 +35,7 @@
 ## 📸 Screenshots
 
 <p align="center">
-  <img src="screenshots/MainScreen.jpeg" width="250"/>
+  <img src="app/screenshots/MainScreen.jpeg" width="250"/>
   <img src="screenshots/quiz.png" width="250"/>
   <img src="screenshots/result.png" width="250"/>
 </p>
