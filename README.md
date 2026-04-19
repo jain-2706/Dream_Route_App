@@ -87,6 +87,15 @@ Supports both English and Hindi for wider accessibility and improved user experi
 
 ---
 
+
+## ⚙️ How It Works
+
+1. User starts the quiz
+2. Answers are recorded and evaluated
+3. Score and accuracy are calculated
+4. Based on performance, stream is suggested
+5. Career options and learning resources are displayed
+
 ## 🛠️ Tech Stack
 
 - **Programming Language:** Java  
