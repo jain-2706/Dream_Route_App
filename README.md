@@ -6,25 +6,39 @@ Discover your ideal stream with AI-powered quiz & career guidance.
 
 ## 📌 About the Project
 
-DreamRoot is an Android application designed to help students discover their ideal academic stream (**Maths, Science, Arts, Commerce**).
+DreamRoot is an Android application that helps students choose the right academic stream (**Science, Commerce, Arts, Maths**) based on their interests.
 
-It uses an interactive quiz system to understand user interests and then suggests suitable career paths along with curated learning resources.
+It uses an AI-powered quiz system and provides career suggestions along with learning resources.
 
 ---
 
 ## ✨ Features
 
+---
+
 ### 🔹 Stream Finder
 
-This feature helps users identify the best-fit academic stream based on their interests, preferences, and responses in the quiz.
+This module helps users identify the most suitable academic stream based on their interests and quiz responses.
+
+**What it does:**
+- Analyzes user preferences  
+- Suggests best-fit stream (Science / Commerce / Arts / Maths)  
+- Uses quiz-based evaluation  
 
 ---
 
 ### 🔹 Interactive Quiz System
 
-The app includes an MCQ-based quiz system.
+This is the core feature of the app where users answer MCQ-based questions.
 
-It provides real-time progress tracking and supports both English and Hindi languages for better accessibility.
+**What it includes:**
+- Multiple-choice questions (MCQ)  
+- Real-time progress tracking  
+- Supports English + Hindi language  
+
+**Screenshot:**
+
+<img src="screenshots/MainScreen.jpeg" width="220"/>
 
 ---
 
@@ -32,26 +46,39 @@ It provides real-time progress tracking and supports both English and Hindi lang
 
 After completing the quiz, users get a detailed performance report.
 
-It includes correct answers, wrong answers, and overall accuracy to help users understand their strengths.
+**What it shows:**
+- Correct answers  
+- Wrong answers  
+- Accuracy percentage  
+
+**Screenshot:**
+
+<img src="screenshots/PerformanceSection.jpeg" width="220"/>
 
 ---
 
 ### 🔹 Career Suggestions
 
-Based on quiz results, the app suggests suitable career options such as:
+Based on quiz results, the app recommends suitable career paths.
 
+**Suggested Careers:**
 - Doctor  
 - Pharmacist  
 - Researcher  
 - Biotechnologist  
 - Astronomer  
 
+**Screenshot:**
+
+<img src="screenshots/Career.jpeg" width="220"/>
+
 ---
 
 ### 🔹 Learning Resources
 
-Users are also guided toward high-quality learning platforms such as:
+This feature provides external learning platforms for students.
 
+**Includes:**
 - MIT OpenCourseWare  
 - Coursera  
 - Khan Academy  
@@ -60,39 +87,28 @@ Users are also guided toward high-quality learning platforms such as:
 
 ---
 
-## 📸 Screenshots
+### 🔹 Language Support
 
-Main Screen of the application:
+The app supports bilingual experience.
 
-<img src="screenshots/MainScreen.jpeg" width="220"/>
+**Features:**
+- English language  
+- Hindi language  
+- Easy toggle support  
 
----
-
-Bilingual Support (English + Hindi):
+**Screenshot:**
 
 <img src="screenshots/BilingualSupport.jpeg" width="220"/>
 
 ---
 
-Performance Analysis Section:
-
-<img src="screenshots/PerformanceSection.jpeg" width="220"/>
-
----
-
-Career Suggestions Screen:
-
-<img src="screenshots/Career.jpeg" width="220"/>
-
----
-
 ## 🛠️ Tech Stack
 
-**Programming Language:** Java  
+**Language:** Java  
 
 ---
 
-**UI Design:** XML + Material Design  
+**UI:** XML + Material Design  
 
 ---
 
@@ -100,17 +116,17 @@ Career Suggestions Screen:
 
 ---
 
-**Charts Library:** MPAndroidChart  
+**Charts:** MPAndroidChart  
 
 ---
 
-**AI Integration:** Gemini API  
+**API Integration:** Gemini API  
 
 ---
 
 ## ⚙️ Installation
 
-Clone the repository using the following command:
+Clone the repository:
 
 ```bash
 git clone https://github.com/jain-2706/Dream_Route_App.git
