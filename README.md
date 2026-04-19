@@ -68,17 +68,17 @@ Supports both English and Hindi for wider accessibility and improved user experi
 ## 📸 App Screenshots
 
 ### 🏠 Main Interface
-<img src="screenshots/MainScreen.jpeg" width="220"/>
+<img src="app/screenshots/MainScreen.jpeg" width="220"/>
 
 ---
 
 ### 🌐 Language Selection (Bilingual Support)
-<img src="screenshots/BilingualSupport.jpeg" width="220"/>
+<img src="app/screenshots/BilingualSupport.jpeg" width="220"/>
 
 ---
 
 ### 📊 Performance Dashboard
-<img src="screenshots/PerformanceSection.jpeg" width="220"/>
+<img src="app/screenshots/PerformanceSection.jpeg" width="220"/>
 
 ---
 
