@@ -3,6 +3,14 @@
   Discover your ideal stream with AI-powered quiz & career guidance
 </p>
 
+---
+
+## 📌 About the Project
+
+DreamRoot is an Android application designed to help students discover their ideal academic stream (**Maths, Science, Arts, Commerce**) through an interactive quiz and provide career guidance with curated learning resources.
+
+---
+
 ## ✨ Features
 
 ### 🔹 Stream Finder
@@ -14,9 +22,10 @@
 - Multi-language support (English + Hindi)
 
 ### 🔹 Performance Analysis
-- Correct answers  
-- Wrong answers  
-- Accuracy  
+- Displays:
+  - Correct answers  
+  - Wrong answers  
+  - Accuracy  
 
 ### 🔹 Career Suggestions
 - Doctor  
@@ -32,15 +41,33 @@
 - NASA  
 - National Geographic  
 
+---
+
 ## 📸 Screenshots
 
 <p align="center">
-  <img src="app/screenshots/MainScreen.jpeg" width="400" />
-  <img src="app/screenshots/BilingualSupport.jpeg" width="400"/>
-  <img src="app/screenshots/PerformanceSection.jpeg" width="400"/>
-    <img src="app/screenshots/PerformanceSection.jpeg" width="400"/>
+  <img src="screenshots/MainScreen.jpeg" width="220"/>
+  <img src="screenshots/BilingualSupport.jpeg" width="220"/>
+  <img src="screenshots/PerformanceSection.jpeg" width="220"/>
 </p>
 
 <p align="center">
-  <img src="screenshots/career.png" width="250"/>
+  <img src="screenshots/Career.jpeg" width="220"/>
 </p>
+
+---
+
+## 🛠️ Tech Stack
+
+- **Language:** Java  
+- **UI:** XML + Material Design  
+- **IDE:** Android Studio  
+- **Charts:** MPAndroidChart  
+- **API:** Gemini API  
+
+---
+
+## ⚙️ Installation
+
+```bash
+git clone https://github.com/jain-2706/Dream_Route_App.git
