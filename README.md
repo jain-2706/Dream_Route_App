@@ -67,25 +67,31 @@ Supports both English and Hindi for wider accessibility and improved user experi
 
 ## 📸 App Screenshots
 
-### 🏠 Main Interface
+### 🏠 Step 1: Home Screen
+User starts the journey here.
+
 <img src="app/screenshots/MainScreen.jpeg" width="220"/>
 
 ---
 
-### 🌐 Language Selection (Bilingual Support)
+### ❓ Step 2: Quiz Interface
+User answers MCQ-based questions.
+
 <img src="app/screenshots/BilingualSupport.jpeg" width="220"/>
 
 ---
 
-### 📊 Performance Dashboard
+### 📊 Step 3: Performance Analysis
+User gets detailed results.
+
 <img src="app/screenshots/PerformanceSection.jpeg" width="220"/>
 
 ---
 
-### 🧑‍🎓 Career Recommendation Screen
-<img src="app/screenshots/Career.jpeg" width="220"/>
+### 🧭 Step 4: Career Suggestions
+App recommends suitable career paths.
 
----
+<img src="app/screenshots/Career.jpeg" width="220"/>
 
 
 ## ⚙️ How It Works
