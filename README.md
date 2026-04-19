@@ -83,7 +83,7 @@ Supports both English and Hindi for wider accessibility and improved user experi
 ---
 
 ### 🧑‍🎓 Career Recommendation Screen
-<img src="screenshots/Career.jpeg" width="220"/>
+<img src="app/screenshots/Career.jpeg" width="220"/>
 
 ---
 
