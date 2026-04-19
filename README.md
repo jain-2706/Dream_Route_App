@@ -74,21 +74,29 @@ User starts the journey here.
 
 ---
 
-### ❓ Step 2: Quiz Interface
-User answers MCQ-based questions.
+### ❓ Step 2: Language Interface
+User choses language based on his preference.
 
 <img src="app/screenshots/BilingualSupport.jpeg" width="220"/>
 
 ---
 
-### 📊 Step 3: Performance Analysis
+
+### ❓ Step 3: Quiz Interface
+User choses language based on his preference.
+
+<img src="app/screenshots/QuizSection.jpeg" width="220"/>
+
+---
+
+### 📊 Step 4: Performance Analysis
 User gets detailed results.
 
 <img src="app/screenshots/PerformanceSection.jpeg" width="220"/>
 
 ---
 
-### 🧭 Step 4: Career Suggestions
+### 🧭 Step 5: Career Suggestions
 App recommends suitable career paths.
 
 <img src="app/screenshots/Career.jpeg" width="220"/>
