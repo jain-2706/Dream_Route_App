@@ -112,7 +112,7 @@ App recommends suitable career paths.
 
 ## 🛠️ Tech Stack
 
-- **Programming Language:** Java  
+- **Programming Language:** Kotlin  
 - **UI Framework:** XML + Material Design  
 - **IDE:** Android Studio  
 - **Charts Library:** MPAndroidChart  
